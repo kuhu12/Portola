@@ -1,0 +1,68 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 1.3rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #232323;
+}
+
+.navbar {padding:8px 2rem;}
+.navbar{
+	font-size: 2.8rem;
+	font-weight: 1000;
+}
+
+
+#chart {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#chart svg {
+	width: 100%;
+	height: 100vh;
+}
+
+.node {
+/*  stroke-width: 0.1px;
+*/}
+
+
+.link {
+  fill: none;
+  stroke: #bbb;
+  opacity: 0.5;
+}
+
+.details{
+
+	position:relative;
+	margin: 0 auto;
+	/*margin-top: -100px;*/
+	z-index:10;
+	height: 100%;
+	max-height: 1500px;
+	overflow-y: scroll;
+}
+
+.roles, .applications, .environments, .locations {
+	pointer-events: all;
+}
+
+#hovered_element_name{
+	font-size :2.3rem;
+	color : white;
+}
+
+.nodeText, .locationText, .environmentText, .applicationText, .roleText {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 0.85rem;
+	font-weight: 300;
+}
